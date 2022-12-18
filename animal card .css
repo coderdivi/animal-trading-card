@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 90%;
+    height:max-content;
+    max-width: 2100px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);
+    background: radial-gradient(circle farthest-side at bottom center, #d58936 0%, #fcb97d 80%);
+  
+}
+.showcase{
+    margin: 0;
+    padding: 0 ;
+    height: 100vh;
+    width: 100%;
+    background: url(./img/whale.jpg)no-repeat center/cover;
+    position: relative;
+    overflow-y: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p,h1,h2,a,li,ul{
+    font-family:'Poppins', sans-serif;;
+}
+
+/* nav */
+.main-nav{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 13px;
+
+}
+.main-nav .logo{
+    width: 110px;
+}
+
+.main-nav ul{
+    display: flex;
+    justify-content:space-evenly;
+    list-style: none;
+}
+
+.main-nav ul li{
+    padding: 0 10px;
+}
+
+
+.main-nav ul li a{
+    padding-bottom: 2px;
+}
+.main-nav ul li a:hover{
+    border-bottom: 2px solid #a44200;
+}
+.main-nav ul.main-menu{
+    flex: 1 ;
+    margin-left: 20px;
+}
+/* text */
+.text h1{
+    font-size: 4rem;
+  margin-top: 30vh;
+    text-align: center;
+    margin-bottom: 3%;color: white;
+}
+.text p{
+    text-align: center;
+    font-size: 1.3rem;color: white;
+}
+/* gift cards */
+
+.gift-cards{
+    display: grid;
+    /* gap: 20px; */
+    grid-template-columns: repeat(4,1fr);
+    text-align: left;
+    margin-left: 2.5%;
+    
+}
+
+/* trading cards */
+.tradingcard {
+ 
+    margin-top: 20%;
+    border-radius: 10px;
+    width: 90%;
+transition: 0.5s;
+    padding-right: .2em;
+    padding-left: .7em;
+    padding-bottom: .6em;
+  }
+  .tradingcard img{
+width: 90%;
+margin-top: 6%;
+clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  }
+
+  .tradingcard:hover{
+ box-shadow: inset -1px 3px 8px 5px  #fcb97d , 2px 5px 16px 0px #d58936, 5px 5px 15px 5px rgba(0,0,0,0); ;
+  }
+  
+  .infobox {
+    margin-top: 7%;
+    margin-left: 8%;
+    width: 80%;
+    border-radius: 5%;
+    border: 2px solid  #fcb97d;
+    padding-right: .5em;
+    padding-left: .5em;
+  }
+
+  
+  .funfact {
+    font-style: italic;
+  }
+  .list-info{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  span {
+    font-weight: bold;
+  }
+  
+@media (max-width:1030px) {
+    .gift-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    @media (max-width:530px){
+.gift-cards{
+    grid-template-columns: repeat(1,1fr);
+}
+    }
+    .text h1{
+        font-size: 2em;
+    }
+    .text p{
+        font-size: 1em;
+    }
+    
+}
